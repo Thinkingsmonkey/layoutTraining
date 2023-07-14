@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reseter.css/2.0.0/reseter.min.css" integrity="sha512-gCJkkUMGTe73+FMwog6gIBCVJIMXRoc21l6/IPCuzxCex/1sxvO8ctb6Zd4/WWs2UMqmtnDrAdhJht5pEY0LXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            outline: 1px solid #000;
+            box-sizing: border-box;
+        }
+        ul{
+            margin: 0;
+        }
+        .d-flex{
+            display: flex;
+        }
+        img{
+            max-width: 100%;
+            height: auto;
+            vertical-align: middle;
+            object-fit: cover;
+        }
+        .mx-20{
+            margin: 0 20px;
+        }
+        .container{
+            max-width: 640px;
+            margin: 0 auto;
+        }
+        .mb-24{
+            margin-bottom: 24px;
+        }
+        footer{
+            height: 120px;
+            justify-content: center;
+            align-items: center;
+        }
+        .fs-title {
+            font-size: 20px;
+            line-height: 1.2;
+        }
+        .fs-text {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+   
+    <main class="container d-flex">
+        <ul class="mr-20">
+            <li class="d-flex">
+                <img class="mb-24" src="https://fakeimg.pl/96x96/200" alt="">
+                <div class="article mx-20">
+                    <h2 class="fs-title">Title 1</h2>
+                    <p class="fs-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab ipsam placeat nobis dicta minus? Nemo?</p>
+                </div>
+            </li>
+            <li class="d-flex">
+                <img class="mb-24" src="https://fakeimg.pl/96x96/200" alt="">
+                <div class="article  mx-20">
+                    <h2 class="fs-title">Title 2</h2>
+                    <p class="fs-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab ipsam placeat nobis dicta minus? Nemo?Ab ipsam placeat nobis dicta minus? Nemo?</p>
+                </div>
+            </li>
+        </ul>
+        <img src="https://fakeimg.pl/216x216/200" alt="">
+    </main>
+    <footer class="container d-flex">footer</footer>
+</body>
+</html>

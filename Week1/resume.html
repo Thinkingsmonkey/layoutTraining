@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/reseter.css/2.0.0/reseter.min.css"
+      integrity="sha512-gCJkkUMGTe73+FMwog6gIBCVJIMXRoc21l6/IPCuzxCex/1sxvO8ctb6Zd4/WWs2UMqmtnDrAdhJht5pEY0LXg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Castoro&family=Lato:wght@400;700&family=Noto+Sans+TC&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fs -->
+    <style>
+      * {
+        font-family: "Castoro", serif;
+        font-weight: 400;
+        line-height: 1.5;
+        box-sizing: border-box;
+      }
+      ul {
+        margin: 0;
+      }
+      .d-flex{
+        display: flex;
+      }
+      .fz-128 {
+        font-size: 128px;
+      }
+      .fz-40 {
+        font-size: 40px;
+      }
+      .fz-32 {
+        font-size: 32px;
+      }
+      .fz-24 {
+        font-size: 24px;
+      }
+      .fz-20 {
+        font-size: 20px;
+      }
+      .mb-80 {
+        margin-bottom: 80px;
+      }
+      .mb-40 {
+        margin-bottom: 40px;
+      }
+      .mb-16 {
+        margin-bottom: 16px;
+      }
+      .mb-12 {
+        margin-bottom: 12px;
+      }
+      .mb-8 {
+        margin-bottom: 8px;
+      }
+      .primary-color {
+        color: #ae0000;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        vertical-align: middle;
+      }
+      .container {
+        max-width: 1278px;
+        margin: 0 auto;
+        padding: 160px 0;
+      }
+      article:first-of-type {
+        text-align: right;
+      }
+      article:last-of-type {
+        text-align: left;
+      }
+      h1 {
+        letter-spacing: 15.36px;
+        margin: 0;
+      }
+      h2 {
+        letter-spacing: 15.36px;
+      }
+      article:first-of-type p {
+        max-width: 636px;
+        padding: 48px 0;
+        position: relative;
+        text-align: left;
+        right: -50%;
+      }
+      .bg-EFEFEF{
+        width: 100vw;
+        left: calc((100vw - 100%) / -2);
+        background-color: #EFEFEF;
+        position: relative;
+      }
+      article:last-of-type{
+        max-width: 636px;
+      }
+      article:last-of-type span {
+        font-style: italic;
+        color: #949494;
+      }
+      /* article:first-of-type p::before {
+        content: "";
+        position: absolute;
+        content: "";
+        position: absolute;
+        top: 0;
+        right: calc((100vw - 100%) / -2);
+        z-index: -1;
+        height: 100%;
+        width: 100vw;
+        background-color: #efefef;
+      } */
+      h3 {
+        border-bottom: #ae0000 3px solid;
+      }
+      main img {
+        display: block;
+        margin: 0 auto;
+      }
+      footer ul {
+        justify-content: center;
+        align-items: center;
+        padding: 64px 0;
+        background-color: #000;
+        gap: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 灰色背景用 ::before 做 -->
+    <main class="container">
+      <h1 class="fz-128">VITO</h1>
+      <img
+        src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week1/vito.png?raw=true"
+        alt="avatar"
+      />
+      <article class="mb-80">
+        <h2 class="fz-128">RESUME</h2>
+        <div class="bg-EFEFEF">
+          <p class="fz-32">
+            I'm Vito, a UI Designer with 5+ years of experience. I create visually
+            appealing interfaces for web and mobile apps. Proficient in Sketch,
+            Adobe XD, Figma, HTML, CSS, and JavaScript. I enjoy collaborating with
+            others to create high-quality products.
+          </p>
+        </div>
+      </article>
+      <article>
+        <section class="mb-40">
+          <h3 class="primary-color fz-40 mb-16">Vito Evans</h3>
+          <p class="fz-24 mb-8">456 Walnut Avenue, Someville, USA</p>
+          <p class="fz-24 mb-8">+1 123 456 7890</p>
+          <p class="fz-24 mb-8">info@hexschool.com</p>
+          <p class="fz-24">www.infohexschool.com</p>
+        </section>
+        <section class="mb-40">
+          <h3 class="primary-color fz-40 mb-16">Vito Evans</h3>
+
+          <span class="fz-20">2014-2018</span>
+          <p class="fz-24 mb-16">Bachelor of Science in Business Administration, University of California, Los Angeles</p>
+          <span class="fz-20">2012-2014</span>
+          <p class="fz-24 mb-16">Associate of Arts in Graphic Design, San Francisco State University</p>
+          <span class="fz-20">2008-2012</span>
+          <p class="fz-24">High School Diploma, Lincoln High School</p>
+        </section>
+        <section class="mb-40">
+          <h3 class="primary-color fz-40 mb-16">Vito Evans</h3>
+          <span class="fz-20">2018-2021</span>
+          <p class="fz-24 mb-16">Marketing Manager, ABC Company</p>
+          <span class="fz-20">2016-2018</span>
+          <p class="fz-24 mb-16">Sales Associate, XYZ Corporation</p>
+          <span class="fz-20">2014-2016</span>
+          <p class="fz-24">Customer Service Representative, QRS Inc.</p>
+        </section>
+        <section>
+          <h3 class="primary-color fz-40 mb-16">Vito Evans</h3>
+          <p class="fz-24 mb-12">Best in Show Award, National Advertising Awards, 2020</p>
+          <p class="fz-24 mb-12">Honorable Mention, International Design Competition, 2019</p>
+          <p class="fz-24">People's Choice Award, Local Art Exhibition, 2018</p>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <ul class="d-flex">
+        <li>
+          <img
+            src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week1/fb.png?raw=true"
+            alt=""
+          />
+        </li>
+        <li>
+          <img
+            src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week1/instagram.png?raw=true"
+            alt=""
+          />
+        </li>
+        <li>
+          <img
+            src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week1/line.png?raw=true"
+            alt=""
+          />
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

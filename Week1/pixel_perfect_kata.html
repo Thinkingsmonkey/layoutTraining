@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reseter.css/2.0.0/reseter.min.css" integrity="sha512-gCJkkUMGTe73+FMwog6gIBCVJIMXRoc21l6/IPCuzxCex/1sxvO8ctb6Zd4/WWs2UMqmtnDrAdhJht5pEY0LXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../base.css">
+    <style>
+        .container{
+            width: 640px;
+        }
+        .article{
+            width: 288px;
+        }
+        footer{
+            background-color: #ddd;
+            height: 120px;
+        }
+    </style>
+</head>
+<body>
+    <main class="container d-flex mt-20">
+        <ul class="article__list mr-20">
+            <li class="d-flex mb-24">
+                <div class="img mr-20"><img src="https://fakeimg.pl/96x96/200" alt=""></div>
+                <div class="article">
+                    <h2 class="fz-20 lh-12">Title 1</h2>
+                    <p class="fz-16 lh-15">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae itaque ut saepe tenetur laboriosam ducimus id</p>
+                </div>
+            </li>
+            <li class="d-flex mb-24">
+                <div class="img mr-20"><img src="https://fakeimg.pl/96x96/200" alt=""></div>
+                <div class="article">
+                    <h2 class="fz-20 lh-12">Title 2</h2>
+                    <p class="fz-16 lh-15">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae itaque ut saepe tenetur laboriosam ducimus id</p>
+                </div>
+            </li>
+        </ul>
+        <div class="img"><img src="https://fakeimg.pl/216x216/200" alt=""></div>
+    </main>
+    
+    <footer class="container fz-16 lh-15 d-flex justify-content-center align-items-center">表尾文字</footer>
+    
+    
+    
+    
+    <!-- (ul.mr-20>li*2.mb-24>.img>img[src="https://fakeimg.pl/96x96/200"])+(ul.article>li*2.mb-24>h2{Title$}+p{Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae itaque ut saepe tenetur laboriosam ducimus id soluta possimus sint quidem!}))+(.img>img[src="https://fakeimg.pl/216x216/200"]))+.container.footer -->
+</body>
+</html>
