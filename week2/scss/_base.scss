@@ -5,6 +5,9 @@ ul {
 .d-flex {
   display: flex;
 }
+.d-flex-direction-column {
+  flex-direction: column;
+}
 .justify-content-center {
   justify-content: center;
 }

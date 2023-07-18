@@ -9,6 +9,13 @@ ul {
   display: flex;
 }
 
+.d-flex-direction-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .justify-content-center {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -75,6 +82,7 @@ banner .discribe h3 {
 
 .container {
   max-width: 1920px;
+  margin: 0 auto;
 }
 
 .wrap {
