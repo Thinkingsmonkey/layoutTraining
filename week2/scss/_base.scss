@@ -1,0 +1,21 @@
+ul {
+  margin: 0;
+  list-style: none;
+}
+.d-flex {
+  display: flex;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.justify-content-space-between {
+  justify-content: space-between;
+}
+.align-content-center{
+  align-content: center;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}

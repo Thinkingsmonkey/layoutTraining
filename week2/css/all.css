@@ -1,0 +1,87 @@
+ul {
+  margin: 0;
+  list-style: none;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.justify-content-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.justify-content-space-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.align-content-center {
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+header {
+  height: 88px;
+}
+header .menu {
+  padding-top: 40px;
+  gap: 61px;
+}
+header .menu div {
+  -ms-flex-preferred-size: 306px;
+      flex-basis: 306px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+header .menu div:first-child {
+  -moz-text-align-last: left;
+       text-align-last: left;
+}
+header .menu div:last-child {
+  text-align: right;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+}
+
+banner {
+  gap: 24px;
+}
+banner .discribe {
+  color: #fff;
+}
+banner .discribe h3 {
+  font-size: 64px;
+  line-height: 150%;
+}
+
+* {
+  font-family: "Bruno Ace SC", cursive;
+}
+
+.container {
+  max-width: 1920px;
+}
+
+.wrap {
+  max-width: 1297px;
+  margin: 0 auto;
+}
+
+.bg-black {
+  background-color: #000;
+}
