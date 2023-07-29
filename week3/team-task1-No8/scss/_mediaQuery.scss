@@ -1,0 +1,31 @@
+@media (max-width:992px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    &__logo {
+      background-image: url("../images/M2.png");
+      margin-bottom: 25px;
+      width: 150px;
+      height: 150px;
+    }
+    &__menu {
+      align-self: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 336px;
+      gap: 0;
+      li {
+        width: 148px;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .banner{
+    flex-direction: column;
+    align-items: center;
+    .article, aside {
+      width: 100%;
+    }
+  }
+}

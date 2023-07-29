@@ -1,0 +1,22 @@
+banner {
+  gap: 24px;
+  .discribe {
+    color: #fff;
+    h3 {
+      font-size: 64px;
+      line-height: 150%;
+    }
+    h1 {
+      font-size: 128px;
+      color: #00FFA3;
+      text-align: right;
+      line-height: 1.5;
+    }
+    .btn {
+      @include btn;
+      background-color: #fff;
+      color: black;
+      align-self: end;
+    }
+  }
+}

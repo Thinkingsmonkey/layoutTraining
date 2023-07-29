@@ -1,36 +1,73 @@
-ul {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
 .d-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .d-flex-direction-column {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .justify-content-center {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .justify-content-space-between {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
 }
 
 .align-content-center {
-  -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
 }
 
 img {
@@ -39,45 +76,10 @@ img {
   vertical-align: middle;
 }
 
-header {
-  height: 88px;
-}
-header .menu {
-  padding-top: 40px;
-  gap: 61px;
-}
-header .menu div {
-  -ms-flex-preferred-size: 306px;
-      flex-basis: 306px;
-  font-size: 16px;
-  font-weight: 400;
-  color: #fff;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-}
-header .menu div:first-child {
-  -moz-text-align-last: left;
-       text-align-last: left;
-}
-header .menu div:last-child {
-  text-align: right;
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
-}
-
-banner {
-  gap: 24px;
-}
-banner .discribe {
-  color: #fff;
-}
-banner .discribe h3 {
-  font-size: 64px;
-  line-height: 150%;
-}
-
 * {
   font-family: "Bruno Ace SC", cursive;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 .container {
@@ -93,3 +95,172 @@ banner .discribe h3 {
 .bg-black {
   background-color: #000;
 }
+
+header {
+  height: 88px;
+}
+header .menu {
+  padding-top: 40px;
+  gap: 61px;
+}
+header .menu div {
+  flex-basis: 306px;
+  flex-shrink: 0;
+}
+header .menu div:first-child {
+  -moz-text-align-last: left;
+       text-align-last: left;
+}
+header .menu div:last-child {
+  text-align: right;
+  flex-shrink: 1;
+}
+header .menu div p {
+  color: #D1D1D1;
+  transition: all 0.2s;
+}
+header .menu div p:hover {
+  color: #00ffa3;
+}
+
+footer {
+  background-color: #000;
+  padding: 40px 0;
+}
+footer p {
+  color: #fff;
+  text-align: center;
+}
+
+banner {
+  gap: 24px;
+}
+banner .discribe {
+  color: #fff;
+}
+banner .discribe h3 {
+  font-size: 64px;
+  line-height: 150%;
+}
+banner .discribe h1 {
+  font-size: 128px;
+  color: #00FFA3;
+  text-align: right;
+  line-height: 1.5;
+}
+banner .discribe .btn {
+  padding: 12px 24px;
+  border-radius: 32px;
+  background-color: #fff;
+  color: black;
+  align-self: end;
+}
+
+.introduction {
+  background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/background-img.png?raw=true");
+  color: #fff;
+  padding: 160px 0;
+}
+.introduction .wrap {
+  gap: 24px;
+}
+.introduction .wrap h2 {
+  font-size: 64px;
+  margin-bottom: 36px;
+}
+.introduction .wrap p {
+  margin-bottom: 32px;
+  font-size: 24px;
+}
+
+.about {
+  background-color: #fff;
+  color: #000;
+}
+.about .wrap {
+  padding: 160px 0;
+}
+.about .wrap ul {
+  max-width: 636px;
+  gap: 24px;
+}
+.about .wrap ul li {
+  max-width: calc(50% - 48px);
+  padding: 16px;
+  font-size: 20px;
+  border: 1px solid #E3E3E3;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.08);
+  gap: 4px;
+}
+.about .wrap ul li span {
+  display: block;
+}
+.about .wrap ul li p {
+  font-size: 16px;
+}
+.about .wrap .content {
+  max-width: 526px;
+}
+.about .wrap .content h2 {
+  font-size: 64px;
+  margin-bottom: 36px;
+}
+.about .wrap .content p {
+  font-size: 24px;
+}
+
+.contact {
+  background: linear-gradient(180deg, #050014 0%, rgba(1, 2, 30, 0.89) 100%);
+  padding: 96px 0;
+}
+.contact__content {
+  gap: 16px;
+}
+.contact p {
+  color: #fff;
+  font-size: 64px;
+}
+.contact__icons {
+  max-width: 526px;
+  gap: 20px;
+}
+.contact__icons li {
+  max-width: 162px;
+}
+.contact__icons li:first-child img {
+  border-radius: 40px;
+  background: url(<path-to-image>), lightgray 50%/cover no-repeat;
+  box-shadow: 0px 0px 16px 3px rgba(144, 148, 255, 0.9), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.projects {
+  padding: 160px 0;
+  background-color: #fff;
+}
+.projects__title {
+  font-size: 64px;
+  color: #000;
+  text-align: right;
+  margin-bottom: 16px;
+}
+.projects__content {
+  gap: 24px;
+}
+.projects__card {
+  gap: 24px;
+  margin-bottom: 28px;
+}
+.projects__descript p {
+  color: #15161D;
+}
+.projects__descript button {
+  padding: 12px 24px;
+  border-radius: 32px;
+  align-self: start;
+  background-color: #000;
+  color: #fff;
+}
+
+.projects__imgs {
+  gap: 24px;
+}/*# sourceMappingURL=all.css.map */

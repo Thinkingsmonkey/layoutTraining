@@ -1,9 +1,15 @@
-@import "variable";
-@import "base";
-@import "header";
-@import "banner";
-@import "main";
+@import "helpers/variables";
+@import "helpers/mixins";
 
-.bg-black {
-  background-color: #000; 
-}
+@import "base/reset";
+@import "base/base";
+
+@import "layout/header";
+@import "layout/footer";
+
+@import "components/banner";
+@import "components/introduction";
+@import "components/about";
+@import "components/contact";
+@import "components/projects";
+

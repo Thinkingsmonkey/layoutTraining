@@ -1,0 +1,35 @@
+.about {
+  background-color: #fff;
+  color: #000;
+  .wrap{
+    padding: 160px 0;
+    ul {
+      max-width: 636px;
+      gap: 24px;
+      li {
+        max-width: calc(50% - 48px); // (636 - 24) / 2 再扣一些 border
+        padding: 16px;
+        font-size: 20px;
+        border: 1px solid #E3E3E3;
+        box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.08);
+        gap: 4px;
+        span {
+          display: block;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+    .content {
+      max-width: 526px;
+      h2 {
+        font-size: 64px;
+        margin-bottom: 36px;
+      }
+      p {
+        font-size: 24px;
+      }
+    }
+  }
+}
