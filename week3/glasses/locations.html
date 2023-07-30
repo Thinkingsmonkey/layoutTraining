@@ -1,133 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Location</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <link rel="stylesheet" href="css/location.css" />
-</head>
-<body>
-  <header class="header mb-6s">
-    <nav class="nav bg-primary">
-      <div class="container d-flex justify-content-between">
-        <h1>
-          <a href="#" class="nav__link"
-            ><img
-              class="nav__logo"
-              src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/logo-white.png"
-              alt="logo"
-            />logo</a
-          >
-        </h1>
-        <ul class="sitemap d-flex gap-64">
-          <li><a href="product.html" class="sitemap__link">系列鏡框</a></li>
-          <li><a href="#" class="sitemap__link">門市據點</a></li>
-          <li><a href="#" class="sitemap__link">部落格</a></li>
-          <li><a href="#" class="sitemap__link">常見問題</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  <main>
-    <div class="location container">
-      <h2 class="location__title title mb-2s">門市據點</h2>
-      <div class="location__filter"><span>選擇地區</span>
-        <select name="" id="">
-          <option value="">台北</option>
-          <option value="">台北</option>
-          <option value="">台北</option>
-        </select>
-      </div>
-      <div class="row row-cols-lg-3 gy-5">
-        <div class="col">
-          <div class="card rounded-0">
-            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-1.png?raw=true" alt="" class="card-img-top rounded-0">
-            <div class="card-body">
-              <p>台北中山旗艦店</p>
-              <div class="location__info"><span>icon</span><span>電話：(02)0000-1234</span><span>icon</span><span>電話：(02)0000-1234</span><span>icon</span><span>電話：(02)0000-1234</span></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Locations</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="css/location.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav bg-primary">
+        <div class="container d-flex justify-content-between">
+          <h1>
+            <a href="#" class="nav__link"
+              ><img
+                class="nav__logo"
+                src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/logo-white.png"
+                alt="logo"
+              />logo</a
+            >
+          </h1>
+          <ul class="sitemap d-flex gap-64">
+            <li><a href="product.html" class="sitemap__link">系列鏡框</a></li>
+            <li><a href="#" class="sitemap__link">門市據點</a></li>
+            <li><a href="#" class="sitemap__link">部落格</a></li>
+            <li><a href="#" class="sitemap__link">常見問題</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="location container">
+        <h2 class="location__title title mb-2s">門市據點</h2>
+        <div class="location__filter d-flex justify-content-between mb-2s5">
+          <span>選擇地區</span>
+          <select name="" id="" class="location__select">
+            <option value="">台北</option>
+            <option value="">台北</option>
+            <option value="">台北</option>
+          </select>
+        </div>
+        <div class="row row-cols-lg-3 gy-5">
+          <div class="col">
+            <div class="card rounded-0">
+              <img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-1.png?raw=true"
+                alt=""
+                class="card-img-top rounded-0"
+              />
+              <div class="card-body">
+                <p>台北中山旗艦店</p>
+              </div>
+              <div class="card-body">
+                <div class="location__info">
+                  <span class="material-symbols-outlined">
+                    call
+                    </span><span>電話：(02)0000-1234</span
+                  ><span class="material-symbols-outlined">
+                    schedule
+                    </span><span>電話：(02)0000-1234</span
+                  ><span class="material-symbols-outlined">
+                    location_on
+                    </span><span>電話：(02)0000-1234</span>
+                </div>
+              </div>
+              <div class="btn btn-dark rounded-0 d-block w-100">詳細資訊</div>
             </div>
-            <div class="btn btn-dark rounded-0 d-block w-100">詳細資訊</div>
+          </div>
+          <div class="col">
+            <div class="card rounded-0">
+              <img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-2.png?raw=true"
+                alt=""
+                class="card-img-top rounded-0"
+              />
+              <div class="card-body">
+                <p>台北中山旗艦店</p>
+                <div class="location__info">
+                  <span>icon</span><span>電話：(02)0000-1234</span
+                  ><span>icon</span><span>電話：(02)0000-1234</span
+                  ><span>icon</span><span>電話：(02)0000-1234</span>
+                </div>
+              </div>
+              <div class="btn btn-dark rounded-0 d-block w-100">詳細資訊</div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card rounded-0">
+              <img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-3.png?raw=true"
+                alt=""
+                class="card-img-top rounded-0"
+              />
+              <div class="card-body">
+                <p>台北中山旗艦店</p>
+                <div class="location__info">
+                  <span>icon</span><span>電話：(02)0000-1234</span
+                  ><span>icon</span><span>電話：(02)0000-1234</span
+                  ><span>icon</span><span>電話：(02)0000-1234</span>
+                </div>
+              </div>
+              <div class="btn btn-dark rounded-0 d-block w-100">詳細資訊</div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card rounded-0">
+              <img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-4.png?raw=true"
+                alt=""
+                class="card-img-top rounded-0"
+              />
+              <div class="card-body">
+                <p>台北中山旗艦店</p>
+                <div class="location__info">
+                  <span>icon</span><span>電話：(02)0000-1234</span
+                  ><span>icon</span><span>電話：(02)0000-1234</span
+                  ><span>icon</span><span>電話：(02)0000-1234</span>
+                </div>
+              </div>
+              <div class="btn btn-dark rounded-0 d-block w-100">詳細資訊</div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card rounded-0">
+              <img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-5.png?raw=true"
+                alt=""
+                class="card-img-top rounded-0"
+              />
+              <div class="card-body">
+                <p>台北中山旗艦店</p>
+                <div class="location__info">
+                  <span>icon</span><span>電話：(02)0000-1234</span
+                  ><span>icon</span><span>電話：(02)0000-1234</span
+                  ><span>icon</span><span>電話：(02)0000-1234</span>
+                </div>
+              </div>
+              <div class="btn btn-dark rounded-0 d-block w-100">詳細資訊</div>
+            </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card rounded-0">
-            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-1.png?raw=true" alt="" class="card-img-top rounded-0">
-            <div class="card-body">
-              <p>台北中山旗艦店</p>
-              <div class="location__info"><span>icon</span><span>電話：(02)0000-1234</span><span>icon</span><span>電話：(02)0000-1234</span><span>icon</span><span>電話：(02)0000-1234</span></div>
-            </div>
-            <div class="btn btn-dark rounded-0 d-block w-100">詳細資訊</div>
+      </div>
+    </main>
+    <footer class="bg-primary">
+      <div class="footer container text-white">
+        <div
+          class="footer__link d-flex justify-content-between align-items-center mb-4"
+        >
+          <ul class="foot__sitemap d-flex gap-5">
+            <li><a href="" class="text-white">首頁</a></li>
+            <li><a href="" class="text-white">系列鏡框</a></li>
+            <li><a href="" class="text-white">門市據點</a></li>
+            <li><a href="" class="text-white">部落格</a></li>
+            <li><a href="" class="text-white">常見問題 </a></li>
+          </ul>
+          <ul class="socialMedia d-flex gap-5">
+            <li>
+              <a href=""
+                ><img
+                  class="socialMedia__img"
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/ic-social-fb.png?raw=true"
+                  alt=""
+              /></a>
+            </li>
+            <li>
+              <a href=""
+                ><img
+                  class="socialMedia__img"
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/ic_social_ig.png?raw=true"
+                  alt=""
+              /></a>
+            </li>
+            <li>
+              <a href=""
+                ><img
+                  class="socialMedia__img"
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/ic_social_line.png?raw=true"
+                  alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="contactInfo row">
+          <div class="cow-12 d-flex align-items-end mb-2">
+            <span class="material-symbols-outlined contactInfo__icon">call</span
+            ><span class="contactInfo__text">0800-000-000</span>
+          </div>
+          <div class="cow-12 d-flex align-items-end">
+            <span class="material-symbols-outlined contactInfo__icon">mail</span
+            ><span class="contactInfo__text">glasses@business.com</span>
           </div>
         </div>
-        <div class="col">
-          <div class="card rounded-0">
-            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-1.png?raw=true" alt="" class="card-img-top rounded-0">
-            <div class="card-body">
-              <p>台北中山旗艦店</p>
-              <div class="location__info"><span>icon</span><span>電話：(02)0000-1234</span><span>icon</span><span>電話：(02)0000-1234</span><span>icon</span><span>電話：(02)0000-1234</span></div>
-            </div>
-            <div class="btn btn-dark rounded-0 d-block w-100">詳細資訊</div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card rounded-0">
-            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-1.png?raw=true" alt="" class="card-img-top rounded-0">
-            <div class="card-body">
-              <p>台北中山旗艦店</p>
-              <div class="location__info"><span>icon</span><span>電話：(02)0000-1234</span><span>icon</span><span>電話：(02)0000-1234</span><span>icon</span><span>電話：(02)0000-1234</span></div>
-            </div>
-            <div class="btn btn-dark rounded-0 d-block w-100">詳細資訊</div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card rounded-0">
-            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-1.png?raw=true" alt="" class="card-img-top rounded-0">
-            <div class="card-body">
-              <p>台北中山旗艦店</p>
-              <div class="location__info"><span>icon</span><span>電話：(02)0000-1234</span><span>icon</span><span>電話：(02)0000-1234</span><span>icon</span><span>電話：(02)0000-1234</span></div>
-            </div>
-            <div class="btn btn-dark rounded-0 d-block w-100">詳細資訊</div>
-          </div>
+        <div class="footer__copyright d-flex justify-content-between">
+          <p>Copyright © 2020 Glasses.All rights reserved.</p>
+          <ul class="d-flex gap-5">
+            <li>
+              <p class="text-white">隱私權政策</p>
+            </li>
+            <li>
+              <p class="text-white">隱私權政策</p>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
-  </main>
-  <footer class="bg-primary">
-    <div class="footer container text-white">
-      <div class="footer__link d-flex justify-content-between align-items-center mb-4">
-        <ul class="foot__sitemap d-flex gap-5">
-          <li><a href="" class="text-white">首頁</a></li>
-          <li><a href="" class="text-white">系列鏡框</a></li>
-          <li><a href="" class="text-white">門市據點</a></li>
-          <li><a href="" class="text-white">部落格</a></li>
-          <li><a href="" class="text-white">常見問題  </a></li>
-        </ul>
-        <ul class="socialMedia d-flex gap-5">
-          <li><a href=""><img class="socialMedia__img" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/ic-social-fb.png?raw=true" alt=""></a></li>
-          <li><a href=""><img class="socialMedia__img" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/ic_social_ig.png?raw=true" alt=""></a></li>
-          <li><a href=""><img class="socialMedia__img" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/ic_social_line.png?raw=true" alt=""></a></li>
-        </ul>
-      </div>
-      <div class="contactInfo row">
-        <div class="cow-12 d-flex align-items-end mb-2"><span class="material-symbols-outlined contactInfo__icon">call</span><span class="contactInfo__text">0800-000-000</span></div>
-        <div class="cow-12 d-flex align-items-end"><span class="material-symbols-outlined contactInfo__icon">mail</span><span class="contactInfo__text">glasses@business.com</span></div>
-      </div>
-      <div class="footer__copyright d-flex justify-content-between">
-        <p>Copyright © 2020 Glasses.All rights reserved.</p>
-        <ul class="d-flex gap-5">
-          <li>
-            <p class="text-white">隱私權政策</p>
-          </li>
-          <li>
-            <p class="text-white">隱私權政策</p>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>
