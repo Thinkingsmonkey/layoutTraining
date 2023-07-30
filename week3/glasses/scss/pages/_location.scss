@@ -25,18 +25,31 @@
       background-color: #9f1213;
     }
   }
-  .card-body:last-of-type{
+  .card .card-body:not(:first-of-type){
     border-top: 1px solid #00000020;
   }
   &__info {
     span:nth-child(2n) {
-      width: calc(100% - 24px);
+      width: calc(100% - 32px);
       display: inline-block;
+      vertical-align: top;
+      margin-left: 8px;
     }
   }
 
   &__mapImg {
     height: 100%;
     object-fit: cover;
+  }
+}
+
+.qa__title {
+  font-size: 24px;
+  font-weight: bold;
+}
+.quesion {
+  h3{
+    font-size: 20px;
+    font-weight: bold;
   }
 }

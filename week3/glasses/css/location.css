@@ -11913,15 +11913,27 @@ img {
   background-color: #9f1213;
 }
 
-.location .card-body:last-of-type {
+.location .card .card-body:not(:first-of-type) {
   border-top: 1px solid rgba(0, 0, 0, 0.1254901961);
 }
 .location__info span:nth-child(2n) {
-  width: calc(100% - 24px);
+  width: calc(100% - 32px);
   display: inline-block;
+  vertical-align: top;
+  margin-left: 8px;
 }
 .location__mapImg {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.qa__title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.quesion h3, .quesion .h3 {
+  font-size: 20px;
+  font-weight: bold;
 }/*# sourceMappingURL=location.css.map */
